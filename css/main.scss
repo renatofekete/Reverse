@@ -1,0 +1,62 @@
+$main-color :  #118AB2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background: $main-color;
+  color: white;
+  text-align: center;
+  .heading h1 {
+    padding: 50px;
+    font-size: 48px;
+  }
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      border:none;
+      position: relative;
+      outline: none;
+      padding: 0px 0px 5px 10px;
+      margin-right: 20px;
+      background: $main-color;
+      color: white;
+      border-bottom: white solid thin;
+      
+      &::placeholder {
+        color: white;
+      }
+    }
+    button {
+      border: none;
+      color: white;
+      background: $main-color;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      outline: none;
+      &:active{
+        top: 2px;
+      } 
+    }
+  }
+  .reversed {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }  
+}
+
