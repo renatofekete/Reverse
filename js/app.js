@@ -14,16 +14,9 @@ btn.addEventListener('click', function () {
         answer.innerHTML += reversed[i];
       }, 100 * i);
     })(i);
-
-
   }
-
-
-
 });
 
 input.addEventListener('focus', function () {
   input.value = '';
-
 });
-console.log("test");
