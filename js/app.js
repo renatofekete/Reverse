@@ -20,3 +20,9 @@ btn.addEventListener('click', function () {
 input.addEventListener('focus', function () {
   input.value = '';
 });
+input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode == 13) {
+    btn.click();
+  }
+});
